@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border:none;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    height: 100vh;
+    background-color:#14213da2;
+}
+
+.main-box{
+    width: 500px;
+    height: 600px;
+    top:30%;
+    left:50%;
+    /* transform: translate(-50%, -50%); */
+    margin: auto;
+    background-color:#14213df1;
+    padding:10px 20px 20px 20px;
+    border-radius:8px;
+
+    display: grid;
+
+    grid-template-areas:
+    "principal principal " 
+    "motorista veiculos"   
+    "cliente orcamento"
+    "relatorio relatorio"
+    "usuario usuario"  
+    ;  
+}
+
+h1{
+    padding: 20px;
+    text-align: center;
+    font-size:3.0rem;
+    color:#fca311;
+    margin-bottom: 30px;
+    margin-top: 30px
+}
+
+.main-box div{
+    display: flex;
+    justify-content: space-between
+}
+
+button{
+    width: 200px;
+    height: 35px;
+    background-color: #fca311;
+    padding: 9px 50px;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.principal{
+    grid-area: principal;
+}
+.motorista{
+    grid-area: motorista;
+}
+.veiculos{
+    grid-area: veiculos;
+}
+.cliente{
+    grid-area: cliente;
+}
+.orcamento{
+    grid-area: orcamento;
+}
+.relatorio{
+    grid-area: relatorio;
+    width: 300px;
+}
+.usuario{
+    grid-area: usuario;
+    width: 100%;
+}

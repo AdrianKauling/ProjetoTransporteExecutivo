@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border:none;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+/* html{
+     font-size:62.5%; 
+} */
+body{
+    background-color: #61A5C2;
+    color: white;
+    overflow: hidden;
+}
+
+.logo{
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 40px;
+    width: 130px;
+}
+
+.h1{
+    padding-top: 20px;
+}
+
+h1{
+    background-color: transparent;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    
+    text-align: center;
+    border-radius:10px;
+    color: #012A4A;
+}
+
+.main{
+    background-color: #012A4A;
+    width: 600px;
+    margin: auto;
+    border-radius:10px;
+}
+
+.botoesAcoes{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 40px;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.botoes{
+    margin-right: 14px;
+    position: relative;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 80px 80px;
+    grid-template-areas:
+        "a a"
+    ;
+    gap: 5px;
+
+}
+
+.botoes .pesquisa{
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 2px solid #f77f00;
+    color: #f77f00;
+}
+.botoes .pesquisa::placeholder {
+    color: rgba(255, 255, 255, 0.568);
+}
+
+.botoes .lupa{
+    position: absolute;
+    left:85%;
+    top:8px;
+    cursor: pointer;
+}
+
+.botoes select{
+    background-color: #f77f00;
+    padding: 3px;
+    width: 90px;
+    border-radius: 4px;
+}
+
+.botoes button {
+    background-color: #f77f00;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.botoes .incluir{
+    grid-area: i;
+}
+
+.botoes .alterar{
+    grid-area: a;
+}
+
+.dados_para_inclusao{
+    margin:20px 10px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes #incluir{
+    background-color: #f77f00;
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 164px;
+    margin-left: 392px;
+}
+
+.dados_para_inclusao input{
+    color: white;
+    padding: 8px;
+    background-color: transparent;
+    border:2px solid #f77f00;
+    border-radius: 2px;
+}
+
+.dados_para_inclusao input::placeholder{
+    color: rgba(255, 255, 255, 0.521);
+}
+
+.dados_para_inclusao select{
+    color:rgba(255, 255, 255, 0.521);
+    background-color: #012A4A;
+    border:2px solid #f77f00;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+.tabela{
+    margin-top: 20px;
+}
+
+.tabela th{
+    margin-right: 15px;
+    width: 150px;
+}
+
+.tabela,th, tr, td{
+    border:1px solid white;
+}
+
+.tabela td{
+    margin-right: 15px;
+    width: 150px;
+}
